@@ -48,7 +48,11 @@ fun TextCell(text: String, modifier: Modifier = Modifier) {
 
 @Composable
 fun MainScreen(modifier: Modifier = Modifier) {
-    // Здесь будем менять макеты по шагам
+    Row(modifier) {
+        TextCell("1")
+        TextCell("2")
+        TextCell("3")
+    }
 }
 
 @androidx.compose.ui.tooling.preview.Preview(showBackground = true)
