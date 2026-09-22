@@ -49,10 +49,10 @@ fun TextCell(text: String, modifier: Modifier = Modifier) {
 
 @Composable
 fun MainScreen(modifier: Modifier = Modifier) {
-    Row(modifier = modifier.height(300.dp)) {
-        TextCell("1", Modifier.align(Alignment.Top).weight(0.2f))
-        TextCell("2", Modifier.align(Alignment.CenterVertically).weight(0.4f))
-        TextCell("3", Modifier.align(Alignment.Bottom).weight(0.3f))
+    Row {
+        TextCell("1", Modifier.weight(weight = 0.2f, fill = true))
+        TextCell("2", Modifier.weight(weight = 0.4f, fill = true))
+        TextCell("3", Modifier.weight(weight = 0.3f, fill = true))
     }
 }
 
